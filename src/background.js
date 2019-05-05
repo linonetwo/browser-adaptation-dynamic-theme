@@ -218,13 +218,17 @@ function util_themePackage(color) {
   // http://stackoverflow.com/a/3943023/112731
   let textC = (color.r * 0.299 + color.g * 0.587 + color.b * 0.114) > 186 ? 0 : 255;
 
+  const backgroundColor = `rgba(${color.r}, ${color.g}, ${color.b}, 0.6)`;
+  const textColor = `rgb(${textC}, ${textC}, ${textC})`;
   let colorObject = {
-    accentcolor : 'rgb('+color.r+','+color.g+','+color.b+')',
-    textcolor   : 'rgb('+textC+','+textC+','+textC+')',
-    toolbar     : 'rgb('+color.r+','+color.g+','+color.b+')',
-    tab_line    : 'rgb('+textC+','+textC+','+textC+')',
-    toolbar_bottom_separator : 'rgb('+color.r+','+color.g+','+color.b+')'
+    accentcolor : backgroundColor,
+    textcolor   : textColor,
+    toolbar     : backgroundColor,
+    tab_line    : textColor,
+    toolbar_bottom_separator : backgroundColor
   };
+  console.log(colorObject);
+  
 
   let themeProposal = {
     colors : colorObject,
