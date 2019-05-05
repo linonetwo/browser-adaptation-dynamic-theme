@@ -218,9 +218,13 @@ function util_themePackage(color) {
   // http://stackoverflow.com/a/3943023/112731
   let textC = (color.r * 0.299 + color.g * 0.587 + color.b * 0.114) > 186 ? 0 : 255;
 
-  const backgroundColor = `rgba(${color.r}, ${color.g}, ${color.b}, 0.6)`;
+  const backgroundColor = `rgba(${color.r}, ${color.g}, ${color.b}, 1)`;
   const textColor = `rgb(${textC}, ${textC}, ${textC})`;
   let colorObject = {
+    sidebar: backgroundColor,
+    sidebar_text: textColor,
+    sidebar_highlight: backgroundColor,
+    sidebar_highlight_text: textColor,
     accentcolor : backgroundColor,
     textcolor   : textColor,
     toolbar     : backgroundColor,
