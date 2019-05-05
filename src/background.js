@@ -158,7 +158,7 @@ function notify(message, sender) {
         gettingItem.then(refreshAsync, onError);
     }
 
-    if(message.kind=='theme-color') {
+    if(message.kind=='theme-color' && message.value) {
         let themeProposal = util_themePackage(util_hexToRgb(message.value));
         //console.log('Setting index ' + message.value + ' from next page..');
         pendingApplyColor = themeProposal.colors;
@@ -225,8 +225,8 @@ function util_themePackage(color) {
     sidebar_text: textColor,
     sidebar_highlight: backgroundColor,
     sidebar_highlight_text: textColor,
-    accentcolor : backgroundColor,
-    textcolor   : textColor,
+    frame : backgroundColor,
+    tab_background_text   : textColor,
     toolbar     : backgroundColor,
     tab_line    : textColor,
     toolbar_bottom_separator : backgroundColor
