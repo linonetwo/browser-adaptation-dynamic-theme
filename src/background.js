@@ -37,7 +37,7 @@ gettingItem.then(checkStoredSettings, onError);
 
 function updateActiveTab_pageloaded(tabId, changeInfo) {
 
-      console.log(changeInfo.status);
+      console.log('changeInfo.status', changeInfo.status);
 
       function updateTab(tabs) {
         if (tabs[0]) {
