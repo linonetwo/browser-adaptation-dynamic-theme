@@ -1,8 +1,8 @@
 {
-  "description": "Chameleon Dynamic Theme",
-  "homepage_url": "https://github.com/taboca/themematcher",
+  "description": "Chameleon Dynamic Theme (fixed)",
+  "homepage_url": "https://github.com/linonetwo/browser-adaptation-dynamic-theme",
   "manifest_version": 2,
-  "name": "Chameleon Dynamic Theme",
+  "name": "Chameleon Dynamic Theme (fixed)",
   "permissions": [
     "tabs",
     "storage",
