@@ -10,7 +10,7 @@ var configData = {
   enableGradient    : false,
   enableAccent      : true,
   enableTabLine     : true,
-  enableToolbarOverride : false
+  enableToolbarOverride : true
 }
 
 function checkStoredSettings(item) {
