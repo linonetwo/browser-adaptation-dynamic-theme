@@ -229,7 +229,12 @@ function util_themePackage(color) {
     tab_background_text   : textColor,
     toolbar     : backgroundColor,
     tab_line    : textColor,
-    toolbar_bottom_separator : backgroundColor
+    toolbar_bottom_separator : backgroundColor,
+    toolbar_field : backgroundColor,
+    toolbar_field_text: textColor,
+    toolbar_field_border: backgroundColor,
+    toolbar_field_border_focus: backgroundColor,
+    toolbar_field_text_focus: textColor
   };
   console.log(colorObject);
   
