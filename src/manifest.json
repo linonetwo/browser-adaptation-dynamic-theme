@@ -3,25 +3,20 @@
   "homepage_url": "https://github.com/linonetwo/browser-adaptation-dynamic-theme",
   "manifest_version": 2,
   "name": "Chameleon Dynamic Theme (fixed)",
-  "permissions": [
-    "tabs",
-    "storage",
-    "<all_urls>",
-    "theme"
-  ],
+  "permissions": ["tabs", "storage", "<all_urls>", "theme"],
   "background": {
     "scripts": ["background.js"]
   },
   "options_ui": {
-       "page": "options.html",
-       "browser_style": true
+    "page": "options.html",
+    "browser_style": true
   },
   "version": "2.0",
   "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["body.js"]
-      }
+    {
+      "matches": ["<all_urls>"],
+      "js": ["body.js"]
+    }
   ],
   "applications": {
     "gecko": {
